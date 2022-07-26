@@ -6,7 +6,7 @@
 #!/bin/bash
 
 #export $(grep -v '^#' /home/pi/token | xargs -0)
-pw='cat /home/pi/token'
+pw=`cat /home/pi/token`
 
 #####################################################################
 ### Please set the paths accordingly. In case you don't have all  ###
@@ -76,7 +76,7 @@ push_config(){
   git add . -v
   current_date=$(date +"%Y-%m-%d %T")
   git commit -m "Backup triggered on $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
-  git push "https://d3nnisc:$PW@github.com/d3nnisc/v2.2723_klipper_backup"
+  git push "https://d3nnisc:$pw@github.com/d3nnisc/v2.2723_klipper_backup"
 }
 
 
