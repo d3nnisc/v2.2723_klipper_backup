@@ -6,7 +6,7 @@
 #!/bin/bash
 
 #export $(grep -v '^#' /home/pi/token | xargs -0)
-pw=`cat /home/pi/token`
+pw='cat /home/pi/token'
 
 #####################################################################
 ### Please set the paths accordingly. In case you don't have all  ###
