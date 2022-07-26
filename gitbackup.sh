@@ -75,7 +75,7 @@ push_config(){
   git add . -v
   current_date=$(date +"%Y-%m-%d %T")
   git commit -m "Backup triggered on $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
-  git push "https://d3nnisc:$GH_TOKEN@github.com/d3nnisc/v2.2723_klipper_backup"
+  git push "https://d3nnisc:$TOKEN@github.com/d3nnisc/v2.2723_klipper_backup"
 }
 
 
